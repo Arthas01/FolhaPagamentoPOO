@@ -15,6 +15,16 @@ public class Horista extends Funcionario
             throw new IllegalArgumentException("Valor por hora ou tempo de trabalho não podem ser menor que 0");
         }
 
+        if(HorasTrabalhadas > 222)
+        {
+            throw new RuntimeException("Funcionário não pode trabalhar mais que 222h.");
+        }
+
+        if(ValorHora < 8)
+        {
+            throw new RuntimeException("Funcionário não pode receber menos que R$8/h");
+        }
+
         this.HorasTrabalhadas = HorasTrabalhadas;
         this.ValorHora = ValorHora;
         
