@@ -20,9 +20,6 @@ public class Main
             //System.out.flush(); -> isso é pra limpar o terminal, mas nao ta funcionando do jeito que eu queria1
             System.out.println("=====SISTEMA DE FOLHA=====");
             System.out.println("1. Cadastro de funcionário");
-            //System.out.println("2. ");
-            //System.out.println("3. ");
-            //System.out.println("4. ");
             System.out.println("2. Calcular folha");
             System.out.println("0. Sair");
             System.out.println("ESCOLHA: ");

@@ -4,20 +4,25 @@ import java.util.ArrayList;
 
 public class Folha
 {
-    private ArrayList<Funcionario> funcionario;
+    // aqui usei lista dinamica
+    //Arraylist<ClasseAlvo> nome da lista;
+    private ArrayList<Funcionario> funcionario; 
 
     public Folha()
     {
+            //construtor da lista
             this.funcionario = new ArrayList<>(); 
     }
 
-    public void addFuncionario(Funcionario f)
+    public void addFuncionario(Funcionario f)//precisa receber um objeto da classe Funcionario
     {
+        //metodo de add funcionario -> pega esse obj "f" e adiciona na lista funcionario (eu poderia ter colocado outro nome)
         funcionario.add(f);
     }
 
     public int CalcularFolhaTotal()
     {
+        //loop pta pegar todos os funcionarios
         int Total = 0;
         for (Funcionario f : funcionario) // vai puxar todos os funcionarios f que tem
         {
